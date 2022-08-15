@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* customize */
+@font-face {
+    font-family: "font_1";
+    src: url("../assets/fonts/Dongle-Regular.ttf");
+}
+@font-face {
+    font-family: "font_2";
+    src: url("../assets/fonts/Dongle-Light.ttf");
+}
+
+@layer base {
+    * {
+        @apply font-font_1
+    }
+    body{
+        @apply bg-color_2 text-white
+    }
+    a {
+        @apply no-underline text-white rounded-xl w-28 text-center mr-1.5
+    }
+    a:visited {
+        @apply no-underline text-white
+    }
+    a:hover {
+        @apply bg-black rounded-xl px-5 md:px-2 py-1
+    }
+    h2 {
+        @apply font-font_1 text-white text-4xl my-2.5
+    }
+    h3 {
+        @apply font-font_1 text-white tracking-normal text-3xl 
+    }
+    ul {
+        @apply my-1.5 mx-0 flex flex-wrap text-2xl text-color_3 font-font_2
+    }
+    li {
+        @apply bg-color_2 rounded-3xl py-0 px-2 mt-0 mr-1 mb-1 ml-0
+    }
+}
+  
+@layer components {
+    .nav-active {
+        @apply bg-color_1
+    }
+    .nav-active:hover {
+        @apply bg-black
+    }
+    .result {
+        @apply flex flex-wrap justify-center
+    }
+    .react-slideshow {
+        @apply flex items-center justify-center relative w-1/2 mx-auto 
+    }
+
+}
+
+
+    
+    
+
