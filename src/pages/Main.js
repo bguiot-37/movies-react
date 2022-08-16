@@ -11,7 +11,7 @@ const Main = () => {
       <h1 className="mt-[20%] mb-8 text-8xl lg:text-10xl font-font_1 text-color_1 drop-shadow-md text-center tracking-wide">
         React Movies
       </h1>
-      <div className="flex justify-between w-[60%] md:w-[40%] text-4xl font-font_1 text-white">
+      <div className="flex justify-between w-[80%] md:w-[40%] text-4xl font-font_1 text-white">
         <button>
           <Link to="/signin"> Se connecter</Link>
         </button>

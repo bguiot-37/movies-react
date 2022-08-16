@@ -1000,10 +1000,6 @@ li {
   width: 16rem;
 }
 
-.w-\[60\%\] {
-  width: 60%;
-}
-
 .w-auto {
   width: auto;
 }
@@ -1016,8 +1012,8 @@ li {
   max-width: 280px;
 }
 
-.max-w-\[500px\] {
-  max-width: 500px;
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .flex-\[1_0_25\%\] {
@@ -1600,6 +1596,10 @@ li {
 
   .md\:w-\[40\%\] {
     width: 40%;
+  }
+
+  .md\:max-w-\[500px\] {
+    max-width: 500px;
   }
 
   .md\:justify-between {

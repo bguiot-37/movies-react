@@ -32,7 +32,7 @@ const Movie = () => {
   // méthode pour capter des infos sur les acteurs du film
   const fetchDataActors = async () => {
     const response = await axios.get(
-      `http://api.themoviedb.org/3/movie/${movieId}/casts?api_key=${API_Key}`
+      `https://api.themoviedb.org/3/movie/${movieId}/casts?api_key=${API_Key}`
     );
     return setActorData(response.data.cast);
   };
@@ -47,7 +47,7 @@ const Movie = () => {
   };
 
   return (
-    <div className=" relative container mx-auto">
+    <div className=" relative container mx-auto px-4">
       <Header />
       <button
         onClick={returnBtn}
@@ -62,7 +62,7 @@ const Movie = () => {
             : "./img/poster.jpg"
         }
         alt="affiche film"
-        className="max-w-[500px] max-h-[750px] object-cover object-top block my-5 mx-auto rounded-[50px] shadow-[0_8px_1px_rgba(255, 255, 255, 0.1)-0px_16px_1px_rgba(255,255,255,0.05)]"
+        className="max-w-[300px] md:max-w-[500px] max-h-[750px] object-cover object-top block my-5 mx-auto mt-12 rounded-[50px] shadow-[0_8px_1px_rgba(255, 255, 255, 0.1)-0px_16px_1px_rgba(255,255,255,0.05)]"
       />
       <h2 className="mt-[48px] mb-[24px] mx-0 tracking-[1px] leading-5 text-4xl">
         {movieData.title}
